@@ -1,5 +1,5 @@
-require("bro.settings")
-require("bro.remaps")
+require("karim.settings")
+require("karim.remaps")
 
-require("bro.lazyinit")
+require("karim.lazyinit")
 
