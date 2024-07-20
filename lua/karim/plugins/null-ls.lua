@@ -12,11 +12,6 @@ return {
 			require("mason-null-ls").setup({
 				ensure_installed = {
 					"stylua",
-					"goimports",
-					"gofumpt",
-					"gomodifytags",
-					"impl",
-					"delve",
 					"prettier",
 				},
 			}),
