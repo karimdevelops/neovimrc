@@ -13,6 +13,7 @@ return {
 				ensure_installed = {
 					"stylua",
 					"prettier",
+					"shfmt",
 				},
 			}),
 			on_attach = function(client, bufnr)
@@ -30,6 +31,7 @@ return {
 			sources = {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.shfmt,
 			},
 		})
 	end,
