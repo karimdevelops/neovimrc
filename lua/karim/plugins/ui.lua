@@ -8,6 +8,7 @@ return {
 			vim.cmd("colorscheme nightfox")
 		end,
 	},
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"j-hui/fidget.nvim",
 	},
