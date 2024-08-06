@@ -8,6 +8,13 @@ return {
 			vim.cmd("colorscheme nightfox")
 		end,
 	},
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			-- Attaches to every FileType mode
+			require("colorizer").setup()
+		end,
+	},
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"j-hui/fidget.nvim",
