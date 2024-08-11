@@ -35,7 +35,7 @@ return {
 				null_ls.builtins.formatting.prettierd.with({
 					env = {
 						PRETTIERD_DEFAULT_CONFIG = vim.fn.expand(
-							"~/.config/nvim/lua/karim/lsp-config//prettierrc.json"
+							"~/.config/nvim/lua/karim/lsp-config//.prettierrc.json"
 						),
 					},
 				}),
