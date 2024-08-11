@@ -12,7 +12,7 @@ return {
 			require("mason-null-ls").setup({
 				ensure_installed = {
 					"stylua",
-					"prettier",
+					"prettierd",
 					"shfmt",
 				},
 			}),
@@ -30,8 +30,15 @@ return {
 			end,
 			sources = {
 				null_ls.builtins.formatting.stylua,
-				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.prettierd,
 				null_ls.builtins.formatting.shfmt,
+				null_ls.builtins.formatting.prettierd.with({
+					env = {
+						PRETTIERD_DEFAULT_CONFIG = vim.fn.expand(
+							"~/.config/nvim/lua/karim/lsp-config//prettierrc.json"
+						),
+					},
+				}),
 			},
 		})
 	end,
